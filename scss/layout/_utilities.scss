@@ -1,0 +1,66 @@
+////////////////////////////////////////////
+///////container
+
+.container {
+	width: 114rem;
+	margin: 0 auto;
+
+	@include respond(tab-land) {
+		width: 95rem;
+	}
+
+	@media (max-width: 768px) {
+		width: 75rem;
+	}
+
+	@media (max-width: 576px) {
+		width: 65rem;
+	}
+
+	@media (max-width: 431px) {
+		width: 60rem;
+	}
+
+	@media (max-width: 369px) {
+		width: 55rem;
+	}
+
+	@media (max-width: 343px) {
+		width: 50rem;
+	}
+}
+
+/////////////////////////////////////////////////////
+////////flex
+
+.d-flex {
+	display: flex;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.justify-center {
+	display: flex;
+	justify-content: center;
+}
+
+.spc-btw {
+	display: flex;
+	justify-content: space-between;
+}
+
+.spc-evenly {
+	justify-content: space-evenly;
+}
+
+////////////////
+////overview
+.w-100 {
+	width: 100%;
+}

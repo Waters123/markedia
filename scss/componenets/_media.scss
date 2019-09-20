@@ -1,0 +1,146 @@
+.media-overview {
+	@include respond(tab-land) {
+		flex-direction: column;
+
+		align-items: center;
+	}
+}
+
+.media {
+	margin-right: 2rem;
+	background-color: #ffffff;
+
+	width: 70%;
+	border-radius: 1rem;
+	padding: 5rem;
+	padding-bottom: 5rem;
+
+	@include respond(tab-land) {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+
+	&__box {
+		position: relative;
+
+		&:not(:last-child) {
+			margin-bottom: 33rem;
+
+			@media (max-width: 369px) {
+				margin-bottom: 50rem;
+			}
+		}
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__icon-box {
+		position: absolute;
+		top: 31rem;
+		background: #ffffff;
+		padding: 5rem 2rem;
+		width: 85%;
+		border-radius: 0.5rem;
+		border-bottom: 1px solid #c4c2c2;
+
+		li {
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+			align-self: center;
+		}
+	}
+
+	&__btn {
+		text-decoration: none;
+		color: #ffffff;
+		align-items: center;
+		display: flex;
+		font-size: 1.5rem;
+		font-weight: 600;
+
+		&--facebook {
+			background-color: #3b5998;
+			padding: 0.8em 3rem;
+		}
+
+		&--twitter {
+			background-color: #00b6f1;
+			padding: 0.8em 3rem;
+		}
+
+		&--google {
+			background-color: #da5333;
+			padding: 0.8em 2rem;
+		}
+	}
+
+	&__icon {
+		margin-right: 1rem;
+		font-size: 2rem;
+	}
+
+	&__pages {
+		list-style: none;
+		margin-right: 0.5rem;
+	}
+
+	&__link {
+		background-color: $color-primary;
+		padding: 1rem;
+		text-decoration: none;
+		color: black;
+	}
+}
+
+.media-post {
+	width: 30%;
+
+	@include respond(tab-land) {
+		width: 100%;
+	}
+}
+
+.post {
+	margin-bottom: 5rem;
+	border-radius: 1rem;
+	padding: 2rem;
+	background-color: #ffffff;
+
+	&__img {
+		display: flex;
+		align-self: flex-start;
+		margin-right: 1rem;
+
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__heading {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	&__text {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	&__date {
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 1.2rem;
+		color: #f9ca27;
+	}
+
+	&__galery {
+		margin-bottom: 1rem;
+	}
+}
+
+.img-big {
+	width: 100%;
+}

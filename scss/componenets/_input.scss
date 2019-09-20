@@ -1,0 +1,14 @@
+.search {
+	&__input {
+		padding: 1rem;
+	}
+
+	&__button {
+		margin-right: 2rem;
+		padding: 1rem;
+		border: none;
+		color: #ffffff;
+		background-color: black;
+		cursor: pointer;
+	}
+}
